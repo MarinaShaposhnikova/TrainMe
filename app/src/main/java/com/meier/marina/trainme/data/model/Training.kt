@@ -4,8 +4,8 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
 @Entity
-data class Day(
+data class Training(
         @PrimaryKey(autoGenerate = true)
         val uid: Long,
-        val exercises: List<Exercise>
+        val days: List<Day>
 )
