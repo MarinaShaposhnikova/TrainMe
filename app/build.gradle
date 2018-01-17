@@ -75,7 +75,7 @@ dependencies {
     kapt "android.arch.lifecycle:compiler:$project.LIFECYCLE_VERSION"
 
     // Databinding
-    kapt "com.android.databinding:compiler:3.1.0-alpha08"
+    kapt "com.android.databinding:compiler:3.0.0-beta6"
 
     // Test
     testImplementation 'junit:junit:4.12'
