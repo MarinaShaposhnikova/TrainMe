@@ -1,4 +1,4 @@
-package com.meier.marina.trainme.business.interactor
+package com.meier.marina.trainme.domain.interactor
 
 import com.meier.marina.trainme.data.repository.TrainingRepository
 import javax.inject.Inject
