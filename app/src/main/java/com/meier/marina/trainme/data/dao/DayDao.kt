@@ -4,18 +4,18 @@ import android.arch.persistence.room.Dao
 import android.arch.persistence.room.Delete
 import android.arch.persistence.room.Insert
 import android.arch.persistence.room.Query
-import com.meier.marina.trainme.data.model.Training
+import com.meier.marina.trainme.data.model.Day
 import io.reactivex.Flowable
 
 @Dao
-interface TrainingDao {
+interface DayDao {
 
-    @Query("SELECT * FROM training")
-    fun getTrainings(): Flowable<List<Training>>
+    @Query("SELECT * FROM day")
+    fun getDays(): Flowable<List<Day>>
 
     @Insert
-    fun addTraining(training: Training)
+    fun addDay(day: Day)
 
     @Delete
-    fun deleteTraining(training: Training)
+    fun deleteDay(day: Day)
 }
