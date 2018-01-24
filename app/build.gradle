@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 project.ext {
     SUPPORT_LIBRARY_VERSION = "26.1.0"
     DAGGER_VERSION = "2.11"
@@ -42,7 +44,6 @@ android {
 }
 
 kapt {
-    generateStubs = true
     correctErrorTypes = true
 }
 
@@ -63,6 +64,7 @@ dependencies {
     // Rx
     implementation "io.reactivex.rxjava2:rxjava:$project.RX_JAVA_VERSION"
     implementation "io.reactivex.rxjava2:rxandroid:$project.RX_ANDROID_VERSION"
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.1.0'
 
     // Room
     implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"

@@ -11,7 +11,8 @@ import javax.inject.Singleton
 @Component(modules = arrayOf(
         AndroidSupportInjectionModule::class,
         AppModule::class,
-        UiModule::class)
+        UiModule::class,
+        DaoModule::class)
 )
 
 interface AppComponent : AndroidInjector<App> {
