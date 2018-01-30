@@ -79,6 +79,9 @@ dependencies {
     // Databinding
     kapt "com.android.databinding:compiler:3.0.0-beta6"
 
+    // Adapter
+    implementation 'com.hannesdorfmann:adapterdelegates3:3.0.1'
+
     // Test
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

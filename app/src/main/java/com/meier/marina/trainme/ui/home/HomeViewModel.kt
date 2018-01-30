@@ -10,7 +10,9 @@ class HomeViewModel @Inject constructor(
         val trainingInteractor: TrainingInteractor) : BaseViewModel() {
 
     init {
+    }
 
+    fun addMock() {
         trainingInteractor.addTraining()
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeBy(  // named arguments for lambda Subscribers
